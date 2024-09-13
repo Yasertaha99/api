@@ -6,7 +6,7 @@ import { ErrorsComponent } from './components/errors/errors.component';
 export const routes: Routes = [
     {path:"",component:StudentsComponent}, 
     {path:"students",component:StudentsComponent},
-    {path:"students/1",component:StudentsDetailsComponent},
+    {path:"students/:id",component:StudentsDetailsComponent},
     {path:"**",component:ErrorsComponent},
 ];
     
