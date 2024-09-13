@@ -15,4 +15,8 @@ export class UsersService {
     getAllStudentById(id:number){
       return this.myClient.get(this.URl_DB+"/"+id);
     }
+  createStudent(newStd:any)
+  {
+    return this.myClient.post(this.URl_DB,newStd);
+  }
 }
