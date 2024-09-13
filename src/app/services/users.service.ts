@@ -8,7 +8,7 @@ export class UsersService {
 
   constructor(private myClient:HttpClient) {
     }
-   private URl_DB="https://jsonplaceholder.typicode.com/users"
+   private URl_DB="http://localhost:3000/students"
     getAllStudents(){
       return this.myClient.get(this.URl_DB);
     }
